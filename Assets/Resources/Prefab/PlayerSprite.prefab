@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5205874287492610130}
   - component: {fileID: 3944720562668185089}
+  - component: {fileID: -468255915717972415}
   m_Layer: 0
   m_Name: PlayerSprite
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 523077248301835995}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -394.0615, y: -277.57443, z: 5.4968286}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87,3 +88,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-468255915717972415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523077248301835995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6259d70fc1c514b9a3055783d7cb63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleSprites: []
+  WalkSprites: []
