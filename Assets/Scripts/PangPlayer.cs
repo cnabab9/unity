@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PangPlayer : MonoBehaviour
@@ -13,6 +14,15 @@ public class PangPlayer : MonoBehaviour
     [SerializeField]
     private Sprite[] WalkSprites;
     private STATE _currentState;
+    public SpriteRenderer Img_Renderer;
+    public Sprite Sprite01;
+    public Sprite New_sprite01;
+
+    private void Start()
+    {
+        Img_Renderer.sprite = Sprite01;
+        Img_Renderer = Sprite01.GetComponent<SpriteRenderer>();
+    }
     private void MoveInput()
     {
         if (Input.GetKey(KeyCode.W))
@@ -20,7 +30,8 @@ public class PangPlayer : MonoBehaviour
             Vector3 pos = transform.position;
             pos.y += 10 * Time.deltaTime;
             transform.position = pos;
-
+            Img_Renderer.sprite = New_sprite01;
+            Img_Renderer.sprite = Sprite01;
         }
         if (Input.GetKey(KeyCode.S))
         {
